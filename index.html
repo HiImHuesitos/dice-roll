@@ -18,11 +18,18 @@
 		<main>
 			<form>
 				<label class="sr-only" for="inpDice">Number of dices</label>
-				<input type="number" class="input-number" id="inpDice" name="inpDice" placeholder="How many dices?">
+				<input type="number" class="input" id="inpDice" name="inpDice" placeholder="How many dices?">
 
 				<label class="sr-only" for="inpSide">Number of sides</label>
-				<input type="number" class="input-number" id="inpSide" name="inpSide" placeholder="How many sides?">
-
+				<select name="inpSide" id="inpSide" class="input">
+					<option value="4">4 sides (Tetrahedron)</option>
+					<option value="6">6 sides (Cube)</option>
+					<option value="8">8 sides (Octahedron)</option>
+					<option value="10">10 sides (Pentagonal Trapezohedron)</option>
+					<option value="12">12 sides (Dodecahedron)</option>
+					<option value="20">20 sides (Icosahedron)</option>
+				</select>
+				
 				<button type="button" class="button" id="btnRoll">Roll!</button>
 			</form>
 		</main>
