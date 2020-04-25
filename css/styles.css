@@ -2,22 +2,12 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
-.container {
-	position: absolute;
-	top: 40%;
-	left: 0;
-	right: 0;
-	margin: auto;
-	width: 70%;
-	text-align: center;
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
-}
+.center { text-align: center ;}
 
 .input {
-	padding: 1rem 2rem;
+	padding: 1rem;
 	transition-duration: 0.4s;
+	width: 100%;
 }
 
 .input:hover {
@@ -31,7 +21,6 @@ body {
 	padding: 1rem 2rem;
 	text-align: center;
 	text-decoration: none;
-	display: inline-block;
 	font-size: 16px;
 	transition-duration: 0.4s;
 }
@@ -40,9 +29,9 @@ body {
 	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-/* For 600px wide and down */
+/* For 768px wide and down */
 @media only screen and (max-width: 768px) {
-	.input-number {
+	.input {
 		margin: auto;
 		margin-bottom: 1rem;
 		display: block;
@@ -68,10 +57,29 @@ body {
 				no-repeat;
 }
 
-body.loading .loader {
-	overflow: hidden;   
+body.loading .loader { overflow: hidden; }
+
+body.loading .loader { 	display: block; }
+
+/* GRID */
+
+.wrapper {
+	display: grid;
+	justify-content: center;
+	grid-row-gap: 8px;
+	grid-template-columns: auto auto auto;
+	height: 100vh;
+	align-content: center;
 }
 
-body.loading .loader {
-	display: block;
+.header-content {
+	grid-column: span 3;
+}
+
+.main-content {
+	grid-column: span 3;
+}
+
+.footer-content {
+	grid-column: span 3;
 }

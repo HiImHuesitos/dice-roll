@@ -8,36 +8,41 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-	<div class="container">
-		<header>
-			<h1>Welcome to Dice Roll!</h1>
-			<p>Just add how many dices you want, how many sides are on them, and roll!</p>
-			<p>Feel free to download this page and use it offline from your favourite web browser.</p>
+	<div class="wrapper">
+		<header class="header-content">
+			<h1 class="center">Welcome to Dice Roll!</h1>
+			<p class="center">Just add how many dices you want, how many sides are on them, and roll!</p>
 		</header>
 
 		<main>
 			<form>
-				<label class="sr-only" for="inpDice">Number of dices</label>
-				<input type="number" class="input" id="inpDice" name="inpDice" placeholder="How many dices?">
+				<div class="main-content">
+					<label class="sr-only" for="inpDice">Number of dices</label>
+					<input type="number" class="input" id="inpDice" name="inpDice" placeholder="How many dices?">	
+				</div>
 
-				<label class="sr-only" for="inpSide">Number of sides</label>
-				<select name="inpSide" id="inpSide" class="input">
-					<option value="4">4 sides (Tetrahedron)</option>
-					<option value="6">6 sides (Cube)</option>
-					<option value="8">8 sides (Octahedron)</option>
-					<option value="10">10 sides (Pentagonal Trapezohedron)</option>
-					<option value="12">12 sides (Dodecahedron)</option>
-					<option value="20">20 sides (Icosahedron)</option>
-				</select>
-				
-				<button type="button" class="button" id="btnRoll">Roll!</button>
+				<div class="main-content">
+					<label class="sr-only" for="inpSide">Number of sides</label>
+					<select name="inpSide" id="inpSide" class="input">
+						<option value="4">4 sides</option>
+						<option value="6">6 sides</option>
+						<option value="8">8 sides</option>
+						<option value="10">10 sides</option>
+						<option value="12">12 sides</option>
+						<option value="20">20 sides</option>
+					</select>
+				</div>
+
+				<div class="main-content center">
+					<button type="button" class="button" id="btnRoll">Roll!</button>
+				</div>
 			</form>
 		</main>
+
+		<footer class="footer-content center">
+			<p>Feel free to visit the GitHub repository to download the latest version.</p>
+		</footer>
 	</div>
-
-	<footer>
-
-	</footer>
 
 	<div class="loader" id="loader"></div>
 
