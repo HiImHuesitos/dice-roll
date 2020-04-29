@@ -18,13 +18,13 @@
 			<div class="wrapper">
 				<div class="col">
 					<label class="sr-only" for="inpDice">Number of dices</label>
-					<input type="number" class="input" id="inpDice" name="inpDice" placeholder="How many dices?">	
+					<input type="number" class="input" id="inpDice" name="inpDice" max="20" placeholder="Max of 20 dices...">	
 				</div>
 
 				<div class="col">
-					<label class="sr-only" for="inpSide">Number of sides</label>
-					<select name="inpSide" id="inpSide" class="input">
-						<option value="4">4 sides</option>
+					<label class="sr-only" for="inpType">Number of sides</label>
+					<select name="inpType" id="inpType" class="input">
+						<option value="4" selected>4 sides</option>
 						<option value="6">6 sides</option>
 						<option value="8">8 sides</option>
 						<option value="10">10 sides</option>
@@ -34,20 +34,33 @@
 				</div>
 
 				<div class="col">
-					<button type="button" class="button" id="btnRoll">Roll!</button>
+					<button type="button" class="btn btn-roll" id="btnRoll">Roll!</button>
 				</div>
 			</div>
 		</main>
-	
 
 		<footer class="footer-content center">
 			<p>Feel free to visit the GitHub repository to download the latest version.</p>
 		</footer>
 	</div>
 
-	<div class="loader" id="loader"></div>
+	<!-- MODAL WINDOW -->
+	<div class="modal-container" id="modal">
+		<div class="modal-wrapper">
+			<div class="modal-flex" id="roll-container">
+				<p>Your roll will go here!</p>
+			</div>
+			<div class="modal-flex">
+				<div class="modal-col">
+					<button type="button" class="btn btn-roll" id="btnReroll">Reroll!</button>
+				</div>
+				<div class="modal-col">
+					<button type="button" class="btn btn-cancel" id="btnClose">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
-	<script src="js/jquery-3.5.0.min.js"></script>
 	<script src="js/scripts.js"></script>
 </body>
 </html>
