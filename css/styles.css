@@ -92,7 +92,7 @@ select { text-align-last: center; }
 
 .modal-wrapper {
 	background-color: #fefefe;
-	margin: 15% auto;
+	margin: 10% auto;
 	padding: 20px;
 	border: 1px solid #888;
 	width: 80%;
@@ -103,10 +103,37 @@ select { text-align-last: center; }
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap
 }
 
 .modal-col {
-	margin: 0 2em;
+	margin: .5em 2em;
+}
+
+.roll-regular p {
+	background-color: #F0F3F4;
+	font-weight: 700;
+	padding: .75em .75em;
+	margin: .75em;
+	min-width: 24px;
+}
+
+.roll-bad p {
+	color: #C0392B;
+	background-color: #EC7063;
+	font-weight: 700;
+	padding: .75em .75em;
+	margin: .75em;
+	min-width: 24px;
+}
+
+.roll-good p {
+	color: #1E8449;
+	background-color: #82E0AA;
+	font-weight: 700;
+	padding: .75em .75em;
+	margin: .75em;
+	min-width: 24px;
 }
 
 /*===================*/
